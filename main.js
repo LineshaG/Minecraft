@@ -138,3 +138,50 @@ function my_KeyDown(e)
         right();
     }
 }
+
+function up() 
+{
+ if (player_y >= 0)
+{
+
+ player_y = player_y - block_height
+ Canvas.remove(player_image);
+ player_update();
+ }
+}
+
+function down() 
+{
+ if (player_y <= 500)
+{
+
+ player_y = player_y + block_height
+ Canvas.remove(player_image);
+ player_update();
+
+ }
+}
+
+function left() 
+{
+ if (player_x >= -25)
+{
+
+ player_x = player_x - block_height
+ Canvas.remove(player_image);
+ player_update();
+
+ }
+}
+
+function right() 
+{
+ if (player_x <= 950)
+{
+
+ player_x = player_x + block_height
+ Canvas.remove(player_image);
+ player_update();
+
+ }
+}
